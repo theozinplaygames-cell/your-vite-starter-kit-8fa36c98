@@ -87,7 +87,7 @@ function Lobby() {
       <div className="panel flex flex-col gap-3 p-5">
         <p className="font-display text-sm font-semibold">Jogar com um amigo</p>
         <button
-          onClick={() => run("create", () => create())}
+          onClick={() => run("create", () => create({ data: {} }))}
           disabled={busy !== null}
           className="w-full rounded-xl border border-accent/60 px-4 py-3 text-sm font-semibold text-accent transition-colors hover:bg-accent/10 disabled:opacity-50"
         >
