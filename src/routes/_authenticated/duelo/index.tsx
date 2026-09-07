@@ -73,7 +73,7 @@ function Lobby() {
 
       <div className="panel flex flex-col gap-3 p-5">
         <button
-          onClick={() => run("quick", () => quick())}
+          onClick={() => run("quick", () => quick({ data: {} }))}
           disabled={busy !== null}
           className="font-display w-full rounded-xl bg-primary px-4 py-4 text-lg font-semibold text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-50"
         >
